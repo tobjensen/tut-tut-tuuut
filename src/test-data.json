@@ -1,0 +1,96 @@
+[
+  {
+    ferry: "Alexander",
+    class: "First Fleet Class",
+    route: "F2",
+    destination: "Taronga Zoo",
+    location: "Taronga Zoo Wharf",
+    speed: "4.6 km/h",
+    heading: "112° SE",
+    coordinates: {lat: "-33.838466", lon: "151.231931"},
+    stops: [
+      {stop: "Mosman Bay Wharf", eta: "Now"},
+      {stop: "Old Cremorne", eta: "5 min"},
+      {stop: "South Mosman", eta: "7 min"},
+      {stop: "Cremorne Point", eta: "12 min"},
+      {stop: "Circular Quay", eta: "20 min"}
+      ],
+    ferry_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    class_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    images: ["https://via.placeholder.com/150", "https://via.placeholder.com/150", "https://via.placeholder.com/150"] 
+  },
+  {
+    ferry: "Borrowdale",
+    class: "First Fleet Class",
+    route: "F5",
+    destination: "Neutral Bay",
+    location: "Neutral Bay",
+    speed: "4.6 km/h",
+    heading: "112° SE",
+    coordinates: {lat: "-33.838466", lon: "151.231931"},
+    stops: [
+      {stop: "Mosman Bay Wharf", eta: "Now"},
+      {stop: "Old Cremorne", eta: "5 min"},
+      {stop: "South Mosman", eta: "7 min"},
+      {stop: "Cremorne Point", eta: "12 min"},
+      {stop: "Circular Quay", eta: "20 min"}
+      ],
+    ferry_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    class_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    images: ["https://via.placeholder.com/150", "https://via.placeholder.com/150", "https://via.placeholder.com/150"] 
+  },
+  {
+    ferry: "Charlotte",
+    class: "First Fleet Class",
+    route: "OS",
+    destination: "Out of Service",
+    location: "Balmain Shipyard",
+    speed: "4.6 km/h",
+    heading: "112° SE",
+    coordinates: {lat: "-33.838466", lon: "151.231931"},
+    stops: [],
+    ferry_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    class_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    images: ["https://via.placeholder.com/150", "https://via.placeholder.com/150", "https://via.placeholder.com/150"] 
+  },
+  {
+    ferry: "Freshwater",
+    class: "Freshwater Class",
+    route: "F1",
+    destination: "Manley",
+    location: "Circular Quay",
+    speed: "4.6 km/h",
+    heading: "112° SE",
+    coordinates: {lat: "-33.838466", lon: "151.231931"},
+    stops: [
+      {stop: "Mosman Bay Wharf", eta: "Now"},
+      {stop: "Old Cremorne", eta: "5 min"},
+      {stop: "South Mosman", eta: "7 min"},
+      {stop: "Cremorne Point", eta: "12 min"},
+      {stop: "Circular Quay", eta: "20 min"}
+      ],
+    ferry_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    class_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    images: ["https://via.placeholder.com/150", "https://via.placeholder.com/150", "https://via.placeholder.com/150"] 
+  },
+  {
+    ferry: "Friendship",
+    class: "First Fleet Class",
+    route: "F6",
+    destination: "Mosman Bay",
+    location: "Mosman Bay Wharf",
+    speed: "4.6 km/h",
+    heading: "112° SE",
+    coordinates: {lat: "-33.838466", lon: "151.231931"},
+    stops: [
+      {stop: "Mosman Bay Wharf", eta: "Now"},
+      {stop: "Old Cremorne", eta: "5 min"},
+      {stop: "South Mosman", eta: "7 min"},
+      {stop: "Cremorne Point", eta: "12 min"},
+      {stop: "Circular Quay", eta: "20 min"}
+      ],
+    ferry_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    class_info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    images: ["https://via.placeholder.com/150", "https://via.placeholder.com/150", "https://via.placeholder.com/150"] 
+  }
+]
