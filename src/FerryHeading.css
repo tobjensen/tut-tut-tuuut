@@ -1,0 +1,14 @@
+.ferry-heading {
+  grid-area: ferry-heading;
+}
+
+.ferry-heading h1 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: var(--bold)
+}
+.ferry-heading h2 {
+  margin-top: 0.2em; 
+  font-size: 15px;
+  font-weight: var(--thin)
+}

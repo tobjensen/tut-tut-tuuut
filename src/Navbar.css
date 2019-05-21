@@ -1,6 +1,20 @@
-.nav-background {
-  background-color: #00AB51;
+.navbar-bg {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 3px grey;
+  display: grid;
+  grid-template: 1.5em 1fr 1.5em / 1.5em 1fr;
 }
-.nav-text {
-  color: #ffffff;
+.navbar-text {
+  grid-area: 2/2;
+  vertical-align: middle;
+  font-size: 20px;
+  color: #FFF;
+  text-decoration: none;
+}
+.navbar-bold {
+  font-weight: var(--x-bold);
+  font-style: italic;
 }

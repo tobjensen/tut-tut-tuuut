@@ -3,7 +3,7 @@ import './Favourite.css';
 
 function Favourite() {
   return (
-    <i>❤️</i>
+    <i class="far fa-heart favourite"></i>
     );
 }
 

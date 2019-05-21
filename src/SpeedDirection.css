@@ -1,0 +1,6 @@
+.speed-direction h4 {
+  display: inline;
+  margin-right: 1.5em;
+  font-size: 15px;
+  font-weight: var(--reg);
+}

@@ -14,16 +14,18 @@ class Ferry extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="ferry">
         <FerryHeading />
         <RouteHeading />
-        <div>
+        <div className="fav-speed-direction">
           <Favourite />
           <SpeedDirection />
         </div>
-        <Link to='/ferry1'>
-          <Expand />
-        </Link>
+        <div className="expand">
+          <Link to='/ferry1'>
+            <Expand />
+          </Link>
+        </div>
       </div>
     )
   }

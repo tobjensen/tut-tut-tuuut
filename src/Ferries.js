@@ -5,8 +5,7 @@ import Ferry from './Ferry'
 
 function Ferries() {
   return (
-    <div>
-      <h1>Ferries</h1>
+    <div className="ferries">
       <Search />
       <Ferry />
       <Ferry />

@@ -3,12 +3,14 @@ import './RouteHeading.css';
 
 function RouteHeading() {
   return (
-    <div>
-      <img src='https://via.placeholder.com/40' />
+    <div className="route-heading">
+      <div className="route-icon">
+        <h2>F2</h2>
+      </div>
       <div>
-        <h2>Destination</h2>
-        <div>
-          <i>▶️</i>
+        <h2 className="destination">Destination</h2>
+        <div className="current-location">
+          <i class="fas fa-chevron-circle-right current-location-icon"></i>
           <h3>Current Location</h3>
         </div>
       </div>

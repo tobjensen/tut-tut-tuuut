@@ -3,7 +3,7 @@ import './SpeedDirection.css';
 
 function SpeedDirection() {
   return (
-    <div>
+    <div className="speed-direction">
       <h4>4.6 km/h</h4>
       <h4>112° SE</h4>
     </div>
