@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route} from "react-router-dom";
 import './App.css';
 import Navbar from './Navbar'
 import Ferries from './Ferries';
@@ -12,7 +11,7 @@ function App() {
       <div>
         <Navbar />
         <Route exact path="/" component={Ferries} />
-        <Route exact path="/ferry1" component={FerryDetails} />
+        <Route exact path="/ferry" component={FerryDetails} />
       </div>
     </Router>
   );

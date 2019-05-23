@@ -1,4 +1,21 @@
-.expand-icon {
-  font-size: 17px;
+
+.expand {
+  float: right;
+  text-transform: uppercase;
+  border: none;
   color: #000;
+  line-height: 0;
+}
+
+.expand p {
+  display: inline;
+  font-size: 14px;
+  margin-right: 0.4em;
+  vertical-align: middle;
+}
+
+.expand-icon {
+  display: inline;
+  vertical-align: middle;
+  font-size: 17px;
 }

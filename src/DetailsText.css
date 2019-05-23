@@ -1,0 +1,36 @@
+.details-text-ferry {
+  grid-area: details-text-ferry;
+}
+.details-text-class {
+  grid-area: details-text-class;
+}
+
+.details-heading {
+  margin-top: 3em;
+  font-size: 20px;
+  font-weight: var(--reg);
+}
+
+.details-text p {
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.more {
+  float: right;
+  text-transform: uppercase;
+  border: none;
+}
+
+.more p {
+  display: inline;
+  font-size: 14px;
+  margin-right: 0.4em;
+  vertical-align: middle;
+}
+
+.more i {
+  display: inline;
+  vertical-align: middle;
+  font-size: 17px;
+}

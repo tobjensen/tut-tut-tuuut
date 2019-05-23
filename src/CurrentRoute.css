@@ -1,0 +1,48 @@
+.current-route {
+  grid-area: current-route;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas: 
+    "current-route-heading current-route-heading"
+    "destination-small current-route-list";
+  margin-top: 3em;
+}
+
+
+.current-route h2 {
+  font-size: 20px;
+  font-weight: var(--reg);
+  grid-area: current-route-heading;
+}
+
+.destination-small {
+  grid-area: destination-small;
+  display: flex;
+  height: 25px;
+  align-items: center;
+}
+
+.destination-small h3 {
+  font-size: 14px;
+  font-weight: var(--reg);
+  margin: 0;
+}
+.route-icon-small {
+  height: 25px;
+  width: 25px;
+  line-height: 25px;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 0.3em;
+}
+.route-icon-small h3 {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: var(--reg);
+}
+.current-route-list {
+  grid-area: current-route-list;
+}
+

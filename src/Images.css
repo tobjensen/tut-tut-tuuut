@@ -1,0 +1,11 @@
+.images {
+  grid-area: images;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5em;
+  margin-top: 3em;
+}
+
+.images img{
+  width: 100%;
+}

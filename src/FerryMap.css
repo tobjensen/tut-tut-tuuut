@@ -1,0 +1,8 @@
+.ferry-map {
+  grid-area: ferry-map;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 300px;
+}

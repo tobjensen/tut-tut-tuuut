@@ -2,17 +2,18 @@
   grid-area: route-heading;
   display: grid;
   grid-template-columns: 40px 0.5em 1fr;
-  grid-template-rows: 25px 5px 10px;
+  grid-template-rows: 1px auto 2px 1fr;
   grid-template-areas: 
-    "route-icon . destination"
     "route-icon . ."
-    "route-icon . current-location";
+    ". . destination"
+    ". . ."
+    ". . current-location";
 }
 
 .route-icon {
-  height: 35px;
-  width: 35px;
-  line-height: 35px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
   background-color: var(--primary-color);
   border-radius: 6px;
   text-align: center;
@@ -22,7 +23,7 @@
 .route-icon h2 {
   margin: 0;
   color: #FFF;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: var(--reg);
 }
 
@@ -35,6 +36,7 @@
 
 .current-location {
   grid-area: current-location;
+  line-height: 0;
 }
 
 .current-location-icon{

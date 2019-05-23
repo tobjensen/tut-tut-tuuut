@@ -1,0 +1,87 @@
+.current-route-list {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  font-size: 12px;
+  align-items: center;
+}
+
+.eta {
+  justify-self: end;
+  position: relative;
+  margin: 0;
+  margin-right: 4em;
+  padding: 1em 0;
+}
+
+.wharf {
+  position: relative;
+  margin: 0;
+  padding: 1em 0;
+}
+
+.eta:before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background: #000;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -2em;
+}
+
+.single:before {
+  height: 0%;
+}
+
+.current-route-list p:first-child:after {
+  content: '';
+  width: 3px;
+  height: 50%;
+  background: #FFF;
+  display: block;
+  position: absolute;
+  top: 0em;
+  right: calc(-2em - 1px);
+  z-index: 25;
+}
+
+.current-route-list p:nth-last-child(2):after {
+  content: '';
+  width: 3px;
+  height: 50%;
+  background: #FFF;
+  display: block;
+  position: absolute;
+  bottom: 0em;
+  right: calc(-2em - 1px);
+  z-index: 25;
+}
+
+.wharf:after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border:1px solid black;
+  border-radius: 10px;
+  background: #FFF;
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: calc(-2em - 6px);
+  z-index: 50;
+}
+
+.current-route-list p:last-child:before {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border:1px solid black;
+  border-radius: 10px;
+  background: #000;
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: calc(-2em - 6px);
+  z-index: 60;
+}

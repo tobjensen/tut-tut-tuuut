@@ -1,0 +1,21 @@
+.back a {
+  text-decoration: none;
+  text-align: right;
+}
+
+.back-icon {
+  display: inline;
+  font-size: 17px;
+  color: #000;
+  vertical-align: middle;
+}
+
+.back h4 {
+  display: inline;
+  margin-left: 0.4em;
+  font-size: 14px;
+  color: #000;
+  font-weight: var(--reg);
+  text-transform: uppercase;
+  vertical-align: middle;
+}

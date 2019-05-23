@@ -3,4 +3,6 @@
   padding-top: calc(3em + 20px + 1.5em);
   padding-left: 1em;
   padding-right: 1em;
+  max-width: 800px;
+  margin: auto;
 }

@@ -3,7 +3,10 @@ import './Expand.css';
 
 function Expand() {
   return (
-    <i class="fas fa-angle-right expand-icon"></i>
+    <div className="expand">
+      <p>More</p>
+      <i className="fas fa-angle-right expand-icon"></i>
+    </div>
     );
 }
 

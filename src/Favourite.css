@@ -2,4 +2,8 @@
   font-size: 15px;
   float: left;
   margin-right: 1.5em;
+  cursor: pointer;
+}
+.red {
+  color: red;
 }

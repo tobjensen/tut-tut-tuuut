@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Route, Link } from "react-router-dom";
 import './Ferry.css';
 import FerryHeading from './FerryHeading'
 import RouteHeading from './RouteHeading'
@@ -22,7 +22,7 @@ class Ferry extends React.Component {
           <SpeedDirection />
         </div>
         <div className="expand">
-          <Link to='/ferry1'>
+          <Link to='/ferry'>
             <Expand />
           </Link>
         </div>
