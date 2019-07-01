@@ -16,10 +16,10 @@ class DetailsText extends React.Component {
   }
 
   render() {
-    const text = info.split('\n').map((item, i ) => {
+    const text = this.props.text.split('\n').map((item, i ) => {
       return <p key={i}>{item}</p>;
     });
-    const textSnippet = info.slice(0,300).split('\n').map((item, i ) => {
+    const textSnippet = this.props.text.slice(0,300).split('\n').map((item, i ) => {
       return <p key={i}>{item+' ...'}</p>;
     });
     return (

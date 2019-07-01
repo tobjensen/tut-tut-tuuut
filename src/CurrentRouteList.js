@@ -13,9 +13,10 @@ class CurrentRouteList extends React.Component {
   constructor(props) {
     super(props);
   }
+
   render() {
-    const rows = stops.length;
-    const items = stops.map((item) => (
+    const rows = this.props.stops.length;
+    const items = this.props.stops.map((item) => (
       <>
         <p className={rows === 1 ? "eta single" : "eta"}>{item.eta}</p>
         <p className="wharf">{item.stop}</p>

@@ -2,8 +2,13 @@ import React from 'react';
 import './CurrentRoute.css';
 import CurrentRouteList from './CurrentRouteList'
 
-function CurrentRoute() {
-  return (
+class CurrentRoute extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
       <div className="current-route">
         <h2>Current Route</h2>
         <div className="destination-small">
@@ -12,9 +17,10 @@ function CurrentRoute() {
           </div>
           <h3>Destination</h3>
         </div>
-        <CurrentRouteList className="current-route-list"/>
+        <CurrentRouteList {...this.props} className="current-route-list"/>
       </div>
     );
+  }
 }
 
 export default CurrentRoute;

@@ -15,6 +15,8 @@ import Images from './Images'
 class FerryDetails extends React.Component {
   constructor(props) {
     super(props);
+    this.ferry = this.props.match.params.ferry;
+    this.state = {details: this.props.location.data};
   }
 
   render() {
@@ -26,17 +28,17 @@ class FerryDetails extends React.Component {
           </Link>
         </div>
         <div className="ferry-details">
-          <FerryHeading />
-          <RouteHeading />
+          <FerryHeading {...this.state.details}/>
+          <RouteHeading {...this.state.details}/>
           <div className="fav-speed-direction">
             <Favourite />
-            <SpeedDirection />
+            <SpeedDirection {...this.state.details}/>
           </div>
           <FerryMap />
-          <CurrentRoute />
-          <DetailsText heading="Ferry name" className="details-text-ferry" />
-          <DetailsText heading="Class name" className="details-text-class" />
-          <Images />
+          <CurrentRoute {...this.state.details}/>
+          <DetailsText heading={this.state.details.ferry} text={this.state.details.ferry_info} className="details-text-ferry" />
+          <DetailsText heading={this.state.details.class} text={this.state.details.class_info} className="details-text-class" />
+          <Images {...this.state.details}/>
         </div>
       </div>
     )

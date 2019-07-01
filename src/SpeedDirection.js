@@ -1,13 +1,19 @@
 import React from 'react';
 import './SpeedDirection.css';
 
-function SpeedDirection() {
-  return (
-    <div className="speed-direction">
-      <h4>4.6 km/h</h4>
-      <h4>112° SE</h4>
-    </div>
-    );
+class SpeedDirection extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div className="speed-direction">
+        <h4>{this.props.speed}</h4>
+        <h4>{this.props.heading}</h4>
+      </div>
+      );
+  }
 }
 
 export default SpeedDirection;

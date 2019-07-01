@@ -11,7 +11,7 @@ function App() {
       <div>
         <Navbar />
         <Route exact path="/" component={Ferries} />
-        <Route exact path="/ferry" component={FerryDetails} />
+        <Route path="/:ferry" component={FerryDetails} />
       </div>
     </Router>
   );
