@@ -11,7 +11,7 @@ class Ferries extends React.Component {
   }
 
   componentDidMount() {
-    axios.get("https://ove1uk28c2.execute-api.us-east-1.amazonaws.com/api")
+    axios.get("https://ld8032comb.execute-api.ap-southeast-2.amazonaws.com/api")
       .then(res => {
         const data = res.data.data;
         this.setState((state) => ({

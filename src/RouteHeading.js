@@ -14,7 +14,7 @@ class RouteHeading extends React.Component {
         </div>
         <h2 className="destination">{this.props.destination}</h2>
           <div className="current-location">
-            <i className="fas fa-chevron-circle-right current-location-icon"></i>
+            {this.props.location && <i className="fas fa-chevron-circle-right current-location-icon"></i>}
             <h3>{this.props.location}</h3>
           </div>
       </div>

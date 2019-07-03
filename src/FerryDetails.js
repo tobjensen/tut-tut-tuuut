@@ -34,7 +34,9 @@ class FerryDetails extends React.Component {
             <Favourite />
             <SpeedDirection {...this.state.details}/>
           </div>
-          <FerryMap />
+          <div className="ferry-map">
+           <FerryMap {...this.state.details}/>
+          </div>
           <CurrentRoute {...this.state.details}/>
           <DetailsText heading={this.state.details.ferry} text={this.state.details.ferry_info} className="details-text-ferry" />
           <DetailsText heading={this.state.details.class} text={this.state.details.class_info} className="details-text-class" />
