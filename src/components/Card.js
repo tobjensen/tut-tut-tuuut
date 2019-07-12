@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = (props) => (
   <div>
-    Card Component - {props.ferry.id} - {props.ferry.label}
+    Card Component - {props.id} - {props.label}
   </div>
 );
 
