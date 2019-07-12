@@ -11,6 +11,6 @@ const getData = () => ([
     id: 1007,
     label: 'Supply'
   },
-])
+]);
 
 export default getData;
