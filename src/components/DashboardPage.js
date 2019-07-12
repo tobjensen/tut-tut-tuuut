@@ -8,7 +8,7 @@ const DashboardPage = (props) => (
     <h1>Dashboard Page</h1>
     <div>
       {props.ferries.map((ferry) => (
-        <Link key={ferry.id} to={`/ferries/${ferry.label.toLowerCase()}`}>
+        <Link key={ferry.ferry} to={`/ferries/${ferry.ferry.toLowerCase()}`}>
           <Card {...ferry} />
         </Link>
       ))}

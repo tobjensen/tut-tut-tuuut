@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import AppRouter from './routers/AppRouter';
 import configureStore from './store/configureStore';
-import updateFerryData from './actions/ferries';
+import { updateFerryData, addFavourite } from './actions/ferries';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
 const store = configureStore();
 
+store.dispatch(updateFerryData());
+store.dispatch(addFavourite('Friendship'));
+store.dispatch(addFavourite('Alexander'));
 store.dispatch(updateFerryData());
 
 const jsx = (

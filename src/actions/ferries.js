@@ -1,8 +1,16 @@
-import getData from '../ferries/ferries';
+import getData from '../data/ferries';
 
-const updateFerryData = () => ({
+export const updateFerryData = () => ({
   type: 'UPDATE_FERRY_DATA',
   data: getData()
 });
 
-export default updateFerryData;
+export const addFavourite = (ferry) => ({
+  type: 'ADD_FAVOURITE',
+  ferry
+});
+
+export const removeFavourite = (ferry) => ({
+  type: 'REMOVE_FAVOURITE',
+  ferry
+});

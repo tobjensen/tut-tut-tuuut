@@ -11,7 +11,7 @@ const DetailsPage = (props) => (
 
 const mapStateToProps = (state, props) => ({
   ferry: state.ferries.find((ferry) => (
-    ferry.label.toLowerCase() === props.match.params.ferry
+    ferry.ferry.toLowerCase() === props.match.params.ferry
   ))
 });
 
