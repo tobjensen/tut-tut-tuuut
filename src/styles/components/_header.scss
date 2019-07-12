@@ -1,0 +1,21 @@
+.header {
+  background-color: $green;
+  box-shadow: 0 2px 3px $grey;
+  color: white;
+  position: fixed;
+  text-decoration: none;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header__logo {
+  font-weight: 400;
+  font-size: $l-size;
+  margin: $m-size 0;
+}
+
+.header__logo-bold {
+  font-style: italic;
+  font-weight: 700;
+}
