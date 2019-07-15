@@ -10,6 +10,7 @@
     "dev-server": "webpack-dev-server"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.5",

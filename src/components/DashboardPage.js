@@ -1,14 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { setTextFilter } from '../actions/search';
+import selectFerries from '../selectors/dashboard';
 import Card from './Card';
 
 const DashboardPage = (props) => (
   <div className="container top-padding">
     <h1>Dashboard Page</h1>
+    <input 
+      className="search" 
+      type="text" 
+      placeholder="Search for ferry, class or route..."
+      value={props.search.text}
+      onChange={(e) => props.dispatch(setTextFilter(e.target.value))}
+    />
     <div>
       {props.ferries.map((ferry) => (
-        <Link key={ferry.ferry} to={`/ferries/${ferry.ferry.toLowerCase()}`}>
+        <Link className="link" key={ferry.ferry} to={`/ferries/${ferry.ferry.toLowerCase()}`}>
           <Card {...ferry} />
         </Link>
       ))}
@@ -17,7 +26,8 @@ const DashboardPage = (props) => (
 );
 
 const mapStateToProps = (state) => ({
-  ferries: state.ferries
+  ferries: selectFerries(state.ferries, state.search),
+  search: state.search
 });
 
 export default connect(mapStateToProps)(DashboardPage);

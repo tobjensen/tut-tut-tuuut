@@ -9,7 +9,7 @@ const FavouritesPage = (props) => (
     <h1>Favourites Page</h1>
     <div>
       {props.ferries.map((ferry) => (
-        <Link key={ferry.ferry} to={`/ferries/${ferry.ferry.toLowerCase()}`}>
+        <Link className="link" key={ferry.ferry} to={`/ferries/${ferry.ferry.toLowerCase()}`}>
           <Card {...ferry} />
         </Link>
       ))}

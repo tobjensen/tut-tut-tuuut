@@ -1,0 +1,72 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-row-gap: $xxl-size;
+  grid-template-areas: 
+    "ferry-name-class route-destination"
+    "fav-speed-heading coordinates";
+  background-color: white;
+  border-radius: $xs-size;
+  margin-bottom: $m-size;
+  padding: $xl-size;
+  h2 {
+    font-size: $l-size;
+    margin: 0;
+  }
+}
+
+.card__class {
+  font-weight: 300;
+}
+
+.card__route-destination-container {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  grid-column-gap: $s-size;
+  grid-template-areas:
+    "route destination"
+    "route location";
+  align-items: center;
+}
+
+.card__route {
+  grid-area: route;
+  align-items: center;
+  background-color: $green;
+  border-radius: 0.6rem;
+  color: white;
+  display: flex;
+  font-size: $l-size;
+  font-weight: 400;
+  height: 4rem;
+  justify-content: center;
+  width: 4rem;
+}
+
+.card__destination {
+  grid-area: destination;
+  font-size: $m-size;
+  font-weight: 400;
+}
+
+.card__location {
+  grid-area: location;
+  font-size: $s-size;
+  > i {
+    margin-right: $xs-size;
+  }
+}
+
+.card__fav-speed-heading {
+  grid-area: fav-speed-heading;
+  > * {
+    margin-right: $m-size;
+  }
+}
+
+.card__coordinates {
+  grid-area: coordinates;
+  > * {
+    margin-right: $m-size;
+  }
+}
