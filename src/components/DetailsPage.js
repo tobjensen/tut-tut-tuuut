@@ -5,26 +5,34 @@ import Card from './Card';
 import MapSmall from './MapSmall';
 
 const DetailsPage = (props) => {
-  return (
-    <div className="container top-padding">
-	    <div className="page-top">
-	      <h1>🕵🏻‍♂️ Details</h1>
-	      <button 
-	      	className={`details__favourite-button ${props.ferry.favourite ? 'fav' : ''}`}
-	      	onClick={() => {
-	      		props.ferry.favourite ? 
-	      		props.dispatch(removeFavourite(props.ferry.ferry)) : 
-	      		props.dispatch(addFavourite(props.ferry.ferry))
-	      		props.history.push("/favourites")
-	      	}}
-	      >
-	      	<i className="far fa-heart"></i>
-	      	{props.ferry.favourite ? 'Un-favourite' : 'Favourite'}
-	      </button>
-	  	</div>
-      <Card {...props.ferry} details={true}/>
-    </div>
-  )
+	if (props.ferry) {
+	  return (
+	    <div className="container top-padding">
+		    <div className="page-top">
+		      <h1>🕵🏻‍♂️ Details</h1>
+		      <button 
+		      	className={`details__favourite-button ${props.ferry.favourite ? 'fav' : ''}`}
+		      	onClick={() => {
+		      		props.ferry.favourite ? 
+		      		props.dispatch(removeFavourite(props.ferry.ferry)) : 
+		      		props.dispatch(addFavourite(props.ferry.ferry))
+		      		props.history.push("/favourites")
+		      	}}
+		      >
+		      	<i className="far fa-heart"></i>
+		      	{props.ferry.favourite ? 'Un-favourite' : 'Favourite'}
+		      </button>
+		  	</div>
+	      <Card {...props.ferry} details={true}/>
+	    </div>
+	  )
+	} else {
+		return (
+			<div className="container top-padding">
+				<p className="header__no-favourites">Loading ferry...</p>
+			</div>
+		)
+	}
 };
 
 const mapStateToProps = (state, props) => ({

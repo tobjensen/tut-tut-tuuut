@@ -18,11 +18,12 @@ const DashboardPage = (props) => (
       onChange={(e) => props.dispatch(setTextFilter(e.target.value))}
     />
     <div>
-      {props.ferries.map((ferry) => (
+      {props.ferries.length ? props.ferries.map((ferry) => (
         <Link className="link" key={ferry.ferry} to={`/ferries/${ferry.ferry.toLowerCase()}`}>
           <Card {...ferry} />
         </Link>
-      ))}
+      )) :
+        <p className="header__no-favourites">Loading ferries...</p>}
     </div>
   </div>
 );
