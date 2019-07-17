@@ -19,3 +19,15 @@ button {
 button:disabled {
   cursor: default;
 }
+
+.page-top {
+  display: flex;
+  justify-content: space-between;
+  padding: $m-size 0;
+  h1 {
+    margin: 0;
+  }
+  i {
+  	margin-right: $m-size;
+  }
+}

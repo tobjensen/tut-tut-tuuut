@@ -1,0 +1,41 @@
+.details__heading {
+  font-weight: 400;
+}
+
+.details__text {
+  line-height: 1.6;
+  font-size: $m-size;
+}
+
+.details__more {
+  text-transform: uppercase;
+  border: none;
+  float: right;
+  > span {
+    margin-right: $s-size;
+  }
+}
+
+.details__favourite-button {
+  padding: 0 $xl-size;
+  border: none;
+  text-transform: uppercase;
+  border-radius: $xs-size;
+  background: $red;
+  color: white;	
+  i {
+    margin-right: $s-size;
+  }
+}
+
+.details__favourite-button:hover {
+  background: darken($red, 10%);
+}
+
+.fav {
+  background: $grey;
+}
+
+.fav:hover {
+  background: darken($grey, 10%);
+}

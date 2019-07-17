@@ -7,7 +7,9 @@ import Card from './Card';
 
 const DashboardPage = (props) => (
   <div className="container top-padding">
-    <h1>Dashboard Page</h1>
+    <div className="page-top">
+      <h1>🛳 Dashboard</h1>
+    </div>
     <input 
       className="search" 
       type="text" 

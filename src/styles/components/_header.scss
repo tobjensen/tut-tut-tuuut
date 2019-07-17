@@ -29,6 +29,22 @@
   font-weight: 700;
 }
 
+.header__right-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: $m-size;
+    margin-right: $m-size;
+  }
+}
+
+.selected {
+  font-weight: 800;
+}
+
 .header__refresh {
   color: white;
   cursor: pointer;
@@ -41,4 +57,10 @@
 
 .header__refresh:active {
     color: darken(white, 10%);
+}
+
+.header__no-favourites {
+  text-align: center;
+  color: $grey;
+  font-size: $l-size;
 }

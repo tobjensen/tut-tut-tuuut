@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { updateFerryData } from '../actions/ferries';
+import { fetchFerryData } from '../actions/ferries';
 
 const Header = (props) => (
   <header className="header">
@@ -9,13 +9,17 @@ const Header = (props) => (
       <Link to='/' className="header__logo-link">
         <h2 className="header__logo">TUTTUT<span className="header__logo-bold">TUUUUT</span></h2>
       </Link>
-      <div className="header__refresh" onClick={() => {
-        props.dispatch(updateFerryData())
-      }}>
-        <i className="fas fa-sync"></i>
+      <div className="header__right-side">
+        <NavLink exact to="/" activeClassName="selected">Dashboard</NavLink>
+        <NavLink to="/favourites" activeClassName="selected">Favourites</NavLink>
+        <div className="header__refresh" onClick={() => {
+          props.dispatch(fetchFerryData())
+        }}>
+          <i className="fas fa-sync"></i>
+        </div>
       </div>
     </div>
   </header>
 );
 
-export default connect()(Header);
+export default withRouter(connect()(Header));

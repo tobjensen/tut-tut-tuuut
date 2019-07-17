@@ -1,4 +1,5 @@
-import { createStore, combineReducers } from 'redux';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import ReduxThunk from 'redux-thunk';
 import ferriesReducer from '../reducers/ferries';
 import searchReducer from '../reducers/search';
 
@@ -8,8 +9,7 @@ export default () => {
       ferries: ferriesReducer,
       search: searchReducer
     }),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    applyMiddleware(ReduxThunk)
   );
-
   return store;
 };

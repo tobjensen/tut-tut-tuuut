@@ -15,6 +15,16 @@
   }
 }
 
+.card__details {
+  grid-template-areas: 
+  "ferry-name-class route-destination"
+  "fav-speed-heading coordinates"
+  "card-map card-map"
+  "ferry-details ferry-details"
+  "class-details class-details"
+  "images images";
+}
+
 .card__class {
   font-weight: 300;
 }
@@ -43,6 +53,10 @@
   width: 4rem;
 }
 
+.card__route__OS {
+  background-color: $grey;
+}
+
 .card__destination {
   grid-area: destination;
   font-size: $m-size;
@@ -64,9 +78,29 @@
   }
 }
 
+.card__fav {
+  color: $red;
+}
+
 .card__coordinates {
   grid-area: coordinates;
   > * {
     margin-right: $m-size;
   }
+}
+
+.card__map {
+  grid-area: card-map;
+}
+
+.card__ferry-details {
+  grid-area: ferry-details;
+}
+
+.card__class-details {
+  grid-area: class-details;
+}
+
+.card__images {
+  grid-area: images;
 }
