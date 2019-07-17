@@ -5,6 +5,12 @@
   grid-gap: 0.5em;
 }
 
+@media (min-width: $desktop-breakpoint) {
+  .card__images {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .card__images img{
   width: 100%;
 }

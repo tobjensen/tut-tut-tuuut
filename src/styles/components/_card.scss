@@ -1,28 +1,57 @@
 .card {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
-  grid-row-gap: $xxl-size;
+  grid-template-columns: 1fr;
+  grid-row-gap: $l-size;
   grid-template-areas: 
-    "ferry-name-class route-destination"
-    "fav-speed-heading coordinates";
+    "ferry-name-class"
+    "route-destination"
+    "fav-speed-heading"
+    "coordinates";
   background-color: white;
   border-radius: $xs-size;
   margin-bottom: $m-size;
-  padding: $xl-size;
+  padding: $xl-size $xxl-size;
   h2 {
     font-size: $l-size;
     margin: 0;
   }
 }
 
+@media (min-width: $desktop-breakpoint) {
+  .card {
+    grid-template-columns: 1fr 1fr; 
+    grid-row-gap: $xxl-size;
+    grid-template-areas: 
+      "ferry-name-class route-destination"
+      "fav-speed-heading coordinates";
+    padding: $xl-size;
+  }
+}
+
 .card__details {
   grid-template-areas: 
-  "ferry-name-class route-destination"
-  "fav-speed-heading coordinates"
-  "card-map card-map"
-  "ferry-details ferry-details"
-  "class-details class-details"
-  "images images";
+  "ferry-name-class"
+  "route-destination"
+  "fav-speed-heading"
+  "coordinates"
+  "card-map"
+  "card-stops"
+  "ferry-details"
+  "class-details"
+  "images";
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .card__details {
+    grid-template-areas: 
+      "ferry-name-class route-destination"
+      "fav-speed-heading coordinates"
+      "card-map card-map"
+      "card-stops card-stops"
+      "ferry-details ferry-details"
+      "class-details class-details"
+      "images images";
+  }
 }
 
 .card__class {
@@ -91,6 +120,10 @@
 
 .card__map {
   grid-area: card-map;
+}
+
+.card__stops {
+  grid-area: card-stops;
 }
 
 .card__ferry-details {

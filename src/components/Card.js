@@ -1,5 +1,6 @@
 import React from 'react';
 import MapSmall from './MapSmall';
+import Stops from './Stops';
 import Details from './Details';
 import Images from './Images';
 
@@ -30,6 +31,7 @@ const Card = (props) => (
       <span>{props.coordinates.lon.toFixed(4)}</span>
     </div>
     {props.details && <MapSmall {...props}/>}
+    {props.details && <Stops className="card__stops" stops={props.stops} />}
     {props.details && <Details className="card__ferry-details" heading={props.ferry} text={props.ferry_info}/>}
     {props.details && <Details className="card__class-details" heading={props.class} text={props.class_info}/>}
     {props.details && <Images className="card__images" images={props.images} />}
