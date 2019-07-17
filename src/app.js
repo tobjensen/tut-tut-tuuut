@@ -4,7 +4,6 @@ import { Provider } from 'react-redux';
 import AppRouter from './routers/AppRouter';
 import configureStore from './store/configureStore';
 import { fetchFerryData, addFavourite } from './actions/ferries';
-import getData from './data/ferries';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
