@@ -23,7 +23,18 @@ const DetailsPage = (props) => {
 		      	{props.ferry.favourite ? 'Un-favourite' : 'Favourite'}
 		      </button>
 		  	</div>
-	      <Card {...props.ferry} details={true}/>
+        <div className="card__container">
+  	      <Card {...props.ferry} details={true}/>
+          <div 
+            className="card__fav-link"
+            onClick={() => {
+              props.ferry.favourite ? 
+              props.dispatch(removeFavourite(props.ferry.ferry)) : 
+              props.dispatch(addFavourite(props.ferry.ferry))
+            }}
+          >
+          </div>
+        </div>
 	    </div>
 	  )
 	} else {

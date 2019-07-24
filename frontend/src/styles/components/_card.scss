@@ -109,6 +109,28 @@
 
 .card__fav {
   color: $red;
+  cursor: pointer;
+}
+
+.card__container {
+  position: relative;
+}
+
+.card__fav-link {
+  position: absolute;
+  top: 15.8rem;
+  left: 4.6rem;
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .card__fav-link {
+    top: 12.2rem;
+    left: 3rem;
+  }
 }
 
 .card__coordinates {

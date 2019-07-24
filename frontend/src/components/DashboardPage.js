@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { addFavourite, removeFavourite } from '../actions/ferries';
 import { setTextFilter } from '../actions/search';
 import selectFerries from '../selectors/dashboard';
 import Card from './Card';
@@ -19,9 +20,20 @@ const DashboardPage = (props) => (
     />
     <div>
       {props.ferries.length ? props.ferries.map((ferry) => (
-        <Link className="link" key={ferry.ferry} to={`/ferries/${ferry.ferry.toLowerCase()}`}>
-          <Card {...ferry} />
-        </Link>
+        <div key={ferry.ferry} className="card__container">
+          <Link className="link" to={`/ferries/${ferry.ferry.toLowerCase()}`}>
+            <Card {...ferry} />
+          </Link>
+          <div 
+            className="card__fav-link"
+            onClick={() => {
+              ferry.favourite ? 
+              props.dispatch(removeFavourite(ferry.ferry)) : 
+              props.dispatch(addFavourite(ferry.ferry))
+            }}
+          >
+          </div>
+        </div>
       )) :
         <p className="header__no-favourites">Loading ferries...</p>}
     </div>
