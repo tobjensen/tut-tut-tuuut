@@ -60,7 +60,6 @@ class MapPage extends React.Component {
 		})
   }
   render() {
-  	console.log(this.props.ferries)
   	return(
       <div className="map__container">
         <div className="map__map" id="map"></div>
