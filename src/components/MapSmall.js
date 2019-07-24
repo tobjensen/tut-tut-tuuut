@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import L from 'leaflet';
 
 class MapSmall extends React.Component {
@@ -18,7 +19,19 @@ class MapSmall extends React.Component {
       iconAnchor:   [20, 20],
       popupAnchor:  [0, -12] 
     })
-    this.popup = `${this.props.ferry} | ${this.props.route} ${this.props.destination} | ${this.props.speed} ${this.props.heading}`
+    this.popup = 
+    `
+      <div class="map__popup">
+        <h2>${this.props.ferry}</h2>
+        <h3>${this.props.class}</h3>
+        <div class="map__details">
+          <div class="map__route map__route-${this.props.route}">${this.props.route}</div>
+          <span>${this.props.destination}</span>
+          <span>${this.props.speed}</span>
+          <span>${this.props.heading}</span>
+        </div>
+      </div>
+    `
     this.marker = L.marker(this.props.coordinates, {icon: this.ferryIcon}).addTo(this.map).bindPopup(this.popup);
   }
   componentDidUpdate() {

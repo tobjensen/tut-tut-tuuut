@@ -7,7 +7,7 @@ export const updateFerryData = (data) => ({
 
 export const fetchFerryData = () => {
 	return (dispatch) => {
-		fetch("https://ld8032comb.execute-api.ap-southeast-2.amazonaws.com/api")
+		fetch("https://8ez6nw2nak.execute-api.ap-southeast-2.amazonaws.com/api")
 			.then((res) => res.json())
 			.then((data) => {
 				dispatch(updateFerryData(data.data))

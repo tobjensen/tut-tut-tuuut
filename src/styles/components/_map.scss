@@ -2,3 +2,50 @@
   height: 30rem;
   z-index: 50;
 }
+
+html, body, #app, [data-reactroot], .map__container, .map__map {
+	height: 100%;
+}
+
+.map__container {
+	height: calc(100% - 57px);
+	transform: translateY(57px);
+}
+
+.map__popup {
+	h2 {
+		font-size: $xm-size;
+		margin: 0;
+	}
+	h3 {
+		font-weight: 300;
+		margin: 0;
+		margin-bottom: $s-size;
+	}
+}
+
+.map__details {
+	display: flex;
+	align-items: center;
+	font-size: $s-size;
+	> * {
+		margin-right: $xs-size;
+	}
+}
+
+.map__route {
+  align-items: center;
+  background-color: $green;
+  border-radius: 0.4rem;
+  color: white;
+  display: inline-flex;
+  font-size: $s-size;
+  font-weight: 400;
+  height: 2.5rem;
+  justify-content: center;
+  width: 2.5rem;
+}
+
+.map__route-OS {
+	background-color: $grey;
+}

@@ -12,6 +12,7 @@ const Header = (props) => (
       <div className="header__right-side">
         <NavLink exact to="/" activeClassName="selected">Dashboard</NavLink>
         <NavLink to="/favourites" activeClassName="selected">Favourites</NavLink>
+        <NavLink to="/map" activeClassName="selected">Map</NavLink>
         <div className="header__refresh" onClick={() => {
           props.dispatch(fetchFerryData())
         }}>
