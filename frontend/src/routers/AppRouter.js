@@ -14,8 +14,8 @@ const AppRouter = () => (
       <Header />
       <Switch>
         <Route path="/" component={DashboardPage} exact={true}/>
+        <Route path="/ferries/:ferry" component={DetailsPage} exact={true}/>
         <Route path="/ferries/:ferry/loveletter" component={LoveLetterPage} />
-        <Route path="/ferries/:ferry" component={DetailsPage} />
         <Route path="/favourites" component={FavouritesPage} />
         <Route path="/map" component={MapPage} />
         <Route component={NotFoundPage} />
