@@ -35,7 +35,15 @@ class MapSmall extends React.Component {
     this.marker = L.marker(this.props.coordinates, {icon: this.ferryIcon}).addTo(this.map).bindPopup(this.popup);
   }
   componentDidUpdate() {
+    this.ferryIcon = L.icon ({
+      iconUrl: `/images/${this.props.heading.split(" ")[1]}-${this.props.route}.png`,
+      iconSize:     [40, 40],
+      iconAnchor:   [20, 20],
+      popupAnchor:  [0, -12] 
+    })
     this.marker.setLatLng(this.props.coordinates);
+    this.marker.setIcon(this.ferryIcon);
+    this.map.flyTo(this.props.coordinates)
   }
 
   render() {
